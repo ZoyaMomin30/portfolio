@@ -90,16 +90,19 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
+          style={{ color: "#8b5cf6" }}
         >
           ZOYA MOMIN
         </motion.h1>
         <motion.p
-          className="max-w-[600px] text-lg text-gray-400 sm:text-xl"
+          className="max-w-[600px] text-lg sm:text-xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
+          style={{ color: "#a78bfa" }}
+          
         >
-          Visual Artist & Creative Director
+          Full Stack Web Developer and Data Science Enthusiast
         </motion.p>
       </div>
     </div>

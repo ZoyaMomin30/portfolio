@@ -48,7 +48,8 @@ export default function Contact() {
         >
           <h2 className="mb-4 text-3xl font-bold tracking-tighter sm:text-4xl">Get in Touch</h2>
           <p className="mb-8 text-gray-400">
-            Interested in collaborating or commissioning a piece? Let's create something amazing together.
+            {/* Interested in collaborating or commissioning a piece? Let's create something amazing together. */}
+            Get in touch with me regarding any query
           </p>
         </motion.div>
         <motion.div
@@ -93,7 +94,7 @@ export default function Contact() {
                   <FormItem>
                     <FormLabel>Message</FormLabel>
                     <FormControl>
-                      <Textarea placeholder="Tell me about your project..." className="min-h-[120px]" {...field} />
+                      <Textarea placeholder="Tell me about your message..." className="min-h-[120px]" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
