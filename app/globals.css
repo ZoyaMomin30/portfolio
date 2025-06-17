@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~bootstrap/dist/css/bootstrap.min.css";
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -14,6 +15,11 @@ body {
 
 @layer base {
   :root {
+    --lightest-violet:252.5 94.7% 85.1%;
+    --light-violet: 255.1 91.7% 76.3%;
+    --violet:258.3 89.5% 66.3%;
+    --dark-violet:263.4 70% 50.4%;
+    --darker-violet:263.5 67.4% 34.9%;
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;

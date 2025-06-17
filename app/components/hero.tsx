@@ -46,7 +46,7 @@ export default function Hero() {
 
       draw() {
         if (!ctx) return
-        ctx.fillStyle = "rgba(255, 255, 255, 0.5)"
+        ctx.fillStyle = "#c4b5fd"
         ctx.beginPath()
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
         ctx.fill()
@@ -95,7 +95,7 @@ export default function Hero() {
           ZOYA MOMIN
         </motion.h1>
         <motion.p
-          className="max-w-[600px] text-lg sm:text-xl"
+          className="max-w-[600px] text-lg sm:text-xl "
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
