@@ -10,9 +10,9 @@ export default function Gallery() {
 
   const images = [
     {
-      src: "/placeholder.svg?height=600&width=400",
+      src: "/award1.JPG",
       alt: "Art piece 1",
-      title: "Ethereal Dreams",
+      title: "EDC Member of the Month",
     },
     {
       src: "/placeholder.svg?height=600&width=400",
@@ -40,7 +40,7 @@ export default function Gallery() {
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Featured Works
+          Extra Curricular
         </motion.h2>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {images.map((image, index) => (
@@ -58,7 +58,8 @@ export default function Gallery() {
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+
+              <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-6 opacity-3 transition-opacity duration-300 group-hover:opacity-100">
                 <h3 className="text-xl font-semibold text-white">{image.title}</h3>
               </div>
             </motion.div>

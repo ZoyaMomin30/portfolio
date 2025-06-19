@@ -8,12 +8,12 @@ import About from './components/about'
 export default function Page() {
   return (
     <main className="min-h-screen bg-black text-white">
-      {/* <Hero /> */}
+      <Hero />
       <About />
-      {/* <Gallery />
+      <Gallery />
       <Portfolio />
       <Contact />
-      <Footer /> */}
+      <Footer />
     </main>
   )
 }

@@ -52,28 +52,26 @@ export default function About() {
                                     culpa porro nemo accusantium dolores nulla, atque inventore?
                                 </motion.p>
 
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8 }}
+                                    style={{ margin: "30px 0", display:"flex", alignSelf:"center", alignItems:"center" }}
+                                >
+                                <a id="resume-button" href="/zoyaResume57.pdf" download>
+                                <button className="button"  style={{display:"flex", alignSelf:"center", alignItems:"center"}}>
+                                    <span>Resume</span>
+                                </button>
+                                </a>
+                            </motion.div>
+
                         </div>
                         </div>
 
                     </div>  
             </div>
 
-                  <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                    style={{ margin: "30px 0" }}
-                >
-                    <a id="resume-button" href="/zoyaResume57.pdf" download>
-                    <button className="button">
-                        <span>Resume</span>
-                    </button>
-                    </a>
-                </motion.div>
-            
-
         </div>
-            
 
     )
 

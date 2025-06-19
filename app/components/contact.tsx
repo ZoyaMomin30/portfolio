@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import './../contact.css'
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -32,9 +33,28 @@ export default function Contact() {
     },
   })
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
+async function onSubmit(values: z.infer<typeof formSchema>) {
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(values),
+    })
+
+    if (res.ok) {
+      alert("Message sent successfully!")
+      form.reset()
+    } else {
+      alert("Something went wrong. Try again.")
+    }
+  } catch (error) {
+    console.error(error)
+    alert("Something went wrong. Try again.")
   }
+}
+
 
   return (
     <section className="relative overflow-hidden bg-zinc-900 py-20">
@@ -94,15 +114,39 @@ export default function Contact() {
                   <FormItem>
                     <FormLabel>Message</FormLabel>
                     <FormControl>
-                      <Textarea placeholder="Tell me about your message..." className="min-h-[120px]" {...field} />
+                      <Textarea style={{color:"black"}}placeholder="Tell me about your message..." className="min-h-[120px]" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full">
+              {/* <Button type="submit" className="w-full">
                 Send Message
-              </Button>
+              </Button> */}
+
+              {/*  From Uiverse.io by adamgiebl   */}
+              <button type="submit" className="w-full bg-dark-violet" id="contact-button">
+                <div className="svg-wrapper-1">
+                  <div className="svg-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path
+                        fill="currentColor"
+                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <span>Send</span>
+              </button>
+
+
+
             </form>
           </Form>
         </motion.div>

@@ -90,7 +90,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          style={{ color: "#8b5cf6" }}
+          style={{ color: "#8b5cf6", fontFamily:"monospace" }}
         >
           ZOYA MOMIN
         </motion.h1>
@@ -100,7 +100,6 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           style={{ color: "#a78bfa" }}
-          
         >
           Full Stack Web Developer and Data Science Enthusiast
         </motion.p>
