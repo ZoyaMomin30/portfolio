@@ -59,7 +59,7 @@ export default function Gallery() {
                 />
               </div>
 
-              <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-6 opacity-3 transition-opacity duration-300 group-hover:opacity-100">
+              <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <h3 className="text-xl font-semibold text-white">{image.title}</h3>
               </div>
             </motion.div>
