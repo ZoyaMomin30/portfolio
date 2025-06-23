@@ -11,14 +11,7 @@ export default function About() {
     return (
         <div>
             <div style={{ display:"block", padding:"55px"}}>
-                    {/* <img className="face-image" src="/image-face.jpg" />
-                    <div className="about-para mx-auto">
 
-                        <p>Hi this is zoya momin. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis pariatur totam dicta cumque consequuntur neque nam dolorem possimus quae? Architecto officiis consectetur fugit fugiat? Officiis culpa eligendi iure
-                        </p>
-                    </div> */}
-
-                    {/* Animated Image */}
                     <div className="container text-center">
                         <div className="row">
 
@@ -38,11 +31,11 @@ export default function About() {
                         <div className="col-sm-8">
                                 <motion.p
                                     id="para-text"
-                                    className="text-lightest-violet text-xl"
+                                    className="text-lightest-violet text-xl font-sans"
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.8 }}
-                                    style={{ margin: "10 auto", color: "#c4b5fd", fontFamily: "sans-serif", textAlign:"justify" }}
+                                    style={{ margin: "10 auto", color: "#c4b5fd", fontFamily: "sans", textAlign:"justify" }}
                                 >
                                     Hello this is Zoya Momin. I love to create. Lorem ipsum dolor sit amet,
                                     consectetur adipisicing elit. Beatae dolores pariatur nihil reprehenderit, nobis

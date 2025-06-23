@@ -61,39 +61,15 @@ export default function Portfolio() {
   return (
     <section className="bg-black py-20">
 
-
-      <div className="relative w-[300px] h-[500px] p-3 flex flex-col justify-end gap-3 rounded-lg bg-black text-white cursor-pointer overflow-hidden">
-
-        
-        <div className="absolute -inset-[5px] -z-10 rounded-[10px] bg-gradient-to-br from-[#e81cff] to-[#40c9ff] animate-pulse blur-sm"></div>
-
-        
-        <img
-          src="/habit-tracker"
-          alt="habit tracker"
-          className="w-full h-[180px] object-cover rounded-md"
-        />
-
-        
-        <p className="text-[20px] capitalize font-bold">Habit Tracker</p>
-
-        
-        <p className="text-sm">
-          An UI appealing habit tracker that urges you to do the tasks that you're tracking.
-        </p>
-
-        
-        <a
-          href="https://www.example.com"
-          className="text-sm text-blue-400 underline"
-        >
-          Habit Tracker
-        </a>
+      <div >
+        <div className="relative p-[4px] rounded-lg bg-gradient-to-br from-[#e81cff] to-[#40c9ff] w-[300px]">
+          <div className="bg-black rounded-lg h-[400px] flex flex-col justify-end p-4 text-white">
+            <p className="text-lg font-bold">Popular this month</p>
+            <p className="text-sm">Powered By</p>
+            <p className="text-sm text-[#e81cff] font-semibold">Uiverse</p>
+          </div>
+        </div>
       </div>
-
-      
-
-
 
 
       <div className="container mx-auto px-4">

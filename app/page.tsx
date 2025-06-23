@@ -4,6 +4,8 @@ import Portfolio from "./components/portfolio"
 import Contact from "./components/contact"
 import Footer from "./components/footer"
 import About from './components/about'
+import Projects from './components/project'
+import Skills from './components/skills'
 
 export default function Page() {
   return (
@@ -11,7 +13,9 @@ export default function Page() {
       {/* <Hero />
       <About />
       <Gallery /> */}
-      <Portfolio />
+      {/* <Portfolio /> */}
+      <Projects />
+      <Skills />  
       {/* <Contact />
       <Footer /> */}
     </main>
