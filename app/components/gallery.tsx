@@ -17,17 +17,22 @@ export default function Gallery() {
     {
       src: "/placeholder.svg?height=600&width=400",
       alt: "Art piece 2",
-      title: "Urban Symphony",
+      title: "Debate Competition Winner",
     },
     {
-      src: "/placeholder.svg?height=600&width=400",
+      src: "/host1.JPG",
       alt: "Art piece 3",
-      title: "Digital Nostalgia",
+      title: "Flagship Event Host",
     },
     {
-      src: "/placeholder.svg?height=600&width=400",
+      src: "/host2.JPG",
       alt: "Art piece 4",
-      title: "Abstract Reality",
+      title: "State Level Baseball",
+    },
+    {
+      src: "/wdc.jpg",
+      alt: "Art piece 4",
+      title: "WDC Woman Representative",
     },
   ]
 
@@ -52,30 +57,52 @@ export default function Gallery() {
         </div>
 
       </motion.div>
+
+      
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {images.map((image, index) => (
-            <motion.div
-              key={index}
-              className="group relative overflow-hidden rounded-lg"
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
-            >
-              <div className="aspect-[2/3] overflow-hidden">
-                <img
-                  src={image.src || "/placeholder.svg"}
-                  alt={image.alt}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+          <motion.div
+            key={index}
+            className="group overflow-hidden rounded-lg shadow-lg"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            viewport={{ once: true }}
+          >
+            <div className="relative aspect-[2/3]">
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-6 opacity-5 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="text-xl text-violet-400 font-semibold ">{image.title}</h3>
               </div>
-
-              <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <h3 className="text-xl font-semibold text-white">{image.title}</h3>
-              </div>
-            </motion.div>
+            </div>
+          </motion.div>
           ))}
         </div>
       </div>
     </section>
   )
 }
+
+            // <motion.div
+            //   key={index}
+            //   className="group relative overflow-hidden rounded-lg"
+            //   initial={{ opacity: 0, y: 20 }}
+            //   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            //   transition={{ duration: 0.8, delay: index * 0.2 }}
+            // >
+            //   <div className="relative aspect-[2/3] overflow-hidden">
+            //     <img
+            //       src={image.src || "/placeholder.svg"}
+            //       alt={image.alt}
+            //       className="h-full w-full object-cover relative transition-transform duration-500 group-hover:scale-110"
+            //     />
+            //   </div>
+
+            //   <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            //     <h3 className="text-xl font-semibold text-white">{image.title}</h3>
+            //   </div>
+            // </motion.div>
