@@ -19,12 +19,20 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   })
 
   try {
-    await transporter.sendMail({
-      from: `"${name}" <${email}>`,
-      to: process.env.GMAIL_USER,
-      subject: `New Contact Message from ${name}`,
-      text: message,
-    })
+await transporter.sendMail({
+  from: `"Portfolio Contact" <${process.env.GMAIL_USER}>`, // ✅ authenticated sender
+  to: process.env.GMAIL_USER, // your inbox
+  replyTo: email, // ✅ allows you to hit "Reply" and respond directly to user
+  subject: `New Contact Message from ${name}`,
+  text: `
+Name: ${name}
+Email: ${email}
+
+Message:
+${message}
+  `,
+})
+
 
     res.status(200).json({ success: true })
   } catch (err) {

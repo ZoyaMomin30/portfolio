@@ -19,7 +19,7 @@ export default function About() {
                     
                                 <motion.img
                                     className="face-image col-sm-4"
-                                    src="/image-face.jpg"
+                                    src="/face-image.JPEG"
                                     alt="Zoya"
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
@@ -37,12 +37,10 @@ export default function About() {
                                     transition={{ duration: 0.8 }}
                                     style={{ margin: "10 auto", color: "#c4b5fd", fontFamily: "sans", textAlign:"justify" }}
                                 >
-                                    Hello this is Zoya Momin. I love to create. Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Beatae dolores pariatur nihil reprehenderit, nobis
-                                    quisquam facilis facere quia quibusdam. Error, perferendis officia dignissimos
-                                    vitae nesciunt laborum minima officiis similique molestiae? Eveniet debitis est
-                                    laboriosam explicabo. Ab dolor pariatur in alias ratione temporibus, quia enim,
-                                    culpa porro nemo accusantium dolores nulla, atque inventore?
+                                Since you've stumbled upon this little corner of the internet, let's make it worth your while.
+                                I'm Zoya Momin — part Full Stack Developer, part Data Science & Machine Learning enthusiast, and full-time idea-to-reality wizard. <br /> I don't just code — I create. Ever since I made my first project, I knew I'd found my favourite potion.<br />
+                                And while I enjoy building apps and solving data puzzles, I also love collaborating with people, leading with purpose, and showing up with sincerity (and maybe snacks). 🍪
+                                Whether it's solving a problem solo or vibing with a team to get things done. I enjoy the process, always. 
                                 </motion.p>
 
                                 <motion.div

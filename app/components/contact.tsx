@@ -10,7 +10,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import './../contact.css'
-import { LinkedinIcon } from "lucide-react"
+
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -25,6 +25,8 @@ const formSchema = z.object({
 })
 
 export default function Contact() {
+
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -45,7 +47,7 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
     })
 
     if (res.ok) {
-      alert("Message sent successfully!")
+      alert("I've received the email and I'll reply to you Shortly :)")
       form.reset()
     } else {
       alert("Something went wrong. Try again.")
@@ -67,13 +69,11 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
           viewport={{ once: true }}
           className="mx-auto max-w-2xl text-center"
         >
-          <h2 className="mb-4 text-3xl font-bold tracking-tighter sm:text-4xl">Get in Touch</h2>
+          <h2 className="mb-4 text-3xl font-bold tracking-tighter sm:text-4xl">Get in <span className="text-violet-400">Touch</span></h2>
           <p className="mb-8 text-gray-400">
             {/* Interested in collaborating or commissioning a piece? Let's create something amazing together. */}
             Get in touch with me regarding any query
           </p>
-
-
 
             <ul className="flex space-x-6 justify-content-center">
               {/* GitHub */}
@@ -119,7 +119,6 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
                 </a>
               </li>
             </ul>
-
 
 
 

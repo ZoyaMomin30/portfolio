@@ -6,18 +6,20 @@ import Footer from "./components/footer"
 import About from './components/about'
 import Projects from './components/project'
 import Skills from './components/skills'
+import Gitgraph from "./components/gitgraph"
 
 export default function Page() {
   return (
     <main className="min-h-screen bg-black text-white">
-      {/* <Hero />
+      <Hero />
       <About />
-      <Gallery /> */}
+      <Gallery /> 
       {/* <Portfolio /> */}
       <Projects />
+      <Gitgraph />
       <Skills />  
-      {/* <Contact />
-      <Footer /> */}
+      <Contact />
+      <Footer />
     </main>
   )
 }
