@@ -23,7 +23,7 @@ export default function Gitgraph(){
                 <h1 className="text-5xl font-bold text-center max-w-3xl mx-auto pt-20px">My GitHub <span className="text-violet-400">Contributions</span></h1>
                 <p className="mt-2 text-lg  max-w-3xl mx-auto text-gray-300">Trying to make my GitHub greener than my diet ever will be. And oh lord am I trying. </p>
 
-                <div className="p-4 bg-black w-[900px] shadow-md">
+                <div className="p-4 bg-black w-full max-w-[900px] shadow-md overflow-auto">
                     <GitHubCalendar username="zoyamomin30" />
                 </div>
                 </div>

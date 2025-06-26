@@ -52,13 +52,12 @@ export default function Gallery() {
             Extra <span className="text-[#a78bfa]"> Curricular</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-            From playing softball at states level to winning the debate competition. Extra curricular things have always facinated me. As a strong believer of "All work and no play makes Jack a dull boy" I've always enjoy doing things that prove to be a mind refersher while doing the academics side by side. 
+            From playing softball at states level to winning the debate competition. Extra curricular things have always fascinated me. As a strong believer of "All work and no play makes Jack a dull boy" doing things that spark joy and clear my mind has been the perfect companion to handling academics — a balance I genuinely enjoy.
           </p>
         </div>
 
       </motion.div>
 
-      
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {images.map((image, index) => (
           <motion.div

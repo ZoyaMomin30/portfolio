@@ -61,7 +61,7 @@ export default function Portfolio() {
             Projects &<span className="text-[#a78bfa]"> Works</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-            These are the list of projects and works i've had experience building on. it facinates me that how we can build such beautiful and usefull things from scratch and that is what drives me to make such things with utmost sincerity
+            These are the projects and experiences I've had the joy of building. I've had a great time building these and picked up a ton of lessons along the journey — from late-night debugging to those little “aha!” moments.
           </p>
         </div>
 
