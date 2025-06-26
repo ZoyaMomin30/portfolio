@@ -84,7 +84,7 @@ export default function Hero() {
   return (
     <div className="relative h-screen w-full overflow-hidden">
       <canvas ref={canvasRef} className="absolute inset-0 h-full w-full bg-black" />
-      <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center text-violet-400 ">
+      <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center text-violet-300 ">
         <motion.h1
           className="mb-6 text-6xl font-bold tracking-tighter sm:text-7xl lg:text-8xl"
           initial={{ opacity: 0, y: 20 }}

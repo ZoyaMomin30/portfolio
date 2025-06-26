@@ -15,19 +15,19 @@ export default function Gallery() {
       title: "EDC Member of the Month",
     },
     {
-      src: "/placeholder.svg?height=600&width=400",
-      alt: "Art piece 2",
-      title: "Debate Competition Winner",
-    },
-    {
       src: "/host1.JPG",
-      alt: "Art piece 3",
+      alt: "host image",
       title: "Flagship Event Host",
     },
     {
-      src: "/host2.JPG",
-      alt: "Art piece 4",
-      title: "State Level Baseball",
+      src: "/debate.jpg",
+      alt: "award",
+      title: "Debate Competition Winner",
+    },
+    {
+      src: "/softball.jpg",
+      alt: "Award",
+      title: "State Level Softball",
     },
     {
       src: "/wdc.jpg",

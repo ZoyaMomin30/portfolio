@@ -29,19 +29,19 @@ export default function Portfolio() {
     {
       id: 3,
       title: "Iqra Laser Dies",
-      description: "ILD business website and management.",
+      description: "A business website for Die Maker and Laser Die Cutting and Auto Bending Machine company. ",
       techstack:["Next.js", "Node.js"],
-      link: "https://habit-tracker-qemq.onrender.com/",
+      link: "https://github.com/ZoyaMomin30/ild",
       image:"/ild-main.png"
     },
-    {
-      id: 4,
-      title: "Code Snippet Storage",
-      description: "A project that stores your code snippet for you. ",
-      techstack:["Next.js", "Node.js"],
-      link: "https://habit-tracker-qemq.onrender.com/",
-      image:"/ild-main.png"
-    },
+    // {
+    //   id: 4,
+    //   title: "Code Snippet Storage",
+    //   description: "A project that stores your code snippet for you. ",
+    //   techstack:["Next.js", "Node.js"],
+    //   link: "https://habit-tracker-qemq.onrender.com/",
+    //   image:"/ild-main.png"
+    // },
   ]
 
   return (
