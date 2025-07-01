@@ -20,3 +20,8 @@ npm error this command with --force or --legacy-peer-deps
 npm error to accept an incorrect (and potentially broken) dependency resolution.
 
 ### solution : sudo npm install --legacy-peer-deps
+
+## To include a css file in Tailwind
+
+add a file in the app section.
+import is as import './../about.css'
