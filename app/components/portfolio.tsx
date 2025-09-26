@@ -71,7 +71,6 @@ export default function Portfolio() {
         </div>
       </div>
 
-
       <div className="container mx-auto px-4">
         <h1 className="text-center p-4"> My Projects </h1>
         <div className="mb-12 flex flex-wrap justify-center gap-4">

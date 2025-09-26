@@ -20,6 +20,11 @@ export default function Gallery() {
       title: "Flagship Event Host",
     },
     {
+      src: "/bod.jpg",
+      alt: "Bod",
+      title: "Board of Director EDC",
+    },
+    {
       src: "/debate.jpg",
       alt: "award",
       title: "Debate Competition Winner",
@@ -32,7 +37,7 @@ export default function Gallery() {
     {
       src: "/wdc.jpg",
       alt: "Art piece 4",
-      title: "WDC Woman Representative",
+      title: "CDC Student Representative",
     },
   ]
 
@@ -52,7 +57,7 @@ export default function Gallery() {
             Extra <span className="text-[#a78bfa]"> Curricular</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-            From playing softball at states level to winning the debate competition. Extra curricular things have always fascinated me. As a strong believer of "All work and no play makes Jack a dull boy" doing things that spark joy and clear my mind has been the perfect companion to handling academics — a balance I genuinely enjoy.
+            From playing softball at states level to winning the debate competition. Extra curricular activities have always fascinated me. As a strong believer of "All work and no play makes Jack a dull boy" doing things that spark joy and clear my mind has been the perfect companion to handling academics — a balance I genuinely enjoy.
           </p>
         </div>
 
@@ -86,22 +91,4 @@ export default function Gallery() {
   )
 }
 
-            // <motion.div
-            //   key={index}
-            //   className="group relative overflow-hidden rounded-lg"
-            //   initial={{ opacity: 0, y: 20 }}
-            //   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            //   transition={{ duration: 0.8, delay: index * 0.2 }}
-            // >
-            //   <div className="relative aspect-[2/3] overflow-hidden">
-            //     <img
-            //       src={image.src || "/placeholder.svg"}
-            //       alt={image.alt}
-            //       className="h-full w-full object-cover relative transition-transform duration-500 group-hover:scale-110"
-            //     />
-            //   </div>
 
-            //   <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            //     <h3 className="text-xl font-semibold text-white">{image.title}</h3>
-            //   </div>
-            // </motion.div>

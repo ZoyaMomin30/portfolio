@@ -29,21 +29,36 @@ export default function Portfolio() {
     {
       id: 3,
       title: "Iqra Laser Dies",
-      description: "A business website for Die Maker and Laser Die Cutting and Auto Bending Machine company. ",
+      description: "A business website for IQRA LASER DIES a Die Maker and Laser Die Cutting and Auto Bending Machine company. Created a modern, responsive website for a laser cutting manufacturer, enhancing online presence and showcasing products and services effectively.",
       techstack:["Next.js", "Node.js"],
-      link: "https://github.com/ZoyaMomin30/ild",
+      link: "https://iqra-laser-dies.vercel.app",
       image:"/ild-main.png"
     },
-    // {
-    //   id: 4,
-    //   title: "Code Snippet Storage",
-    //   description: "A project that stores your code snippet for you. ",
-    //   techstack:["Next.js", "Node.js"],
-    //   link: "https://habit-tracker-qemq.onrender.com/",
-    //   image:"/ild-main.png"
-    // },
+    {
+      id: 4,
+      title: "Code Snippet Storage",
+      description: "web application designed for developers to easily store, organize, and share code snippets. Built with a clean, intuitive UI and optimized for efficiency, this project enhances productivity by keeping code accessible and well-organized ",
+      techstack:["Next.js", "Node.js"],
+      link: "https://code-cache-liart.vercel.app/",
+      image:"/code-cache.png"
+    },
+    {
+      id: 5,
+      title: "Data Science Documentation",
+      description: "A platform for sharing detailed data science project walkthroughs and analytical insights. Users can explore topics like Python, machine learning and  data visualization. The blog emphasizes clarity and reproducibility, helping learners and practitioners document, understand, and apply data science concepts effectively. ",
+      techstack:["Next.js", "Node.js"],
+      link: "https://github.com/ZoyaMomin30/Data-Sci-Document",
+      image:"/datascience.png"
+    },
+    {
+      id: 6,
+      title: "LLM Engineer Documentation",
+      description: "Made with the intention of To Developers By Developers. A resource for understanding and using large language models. It provides clear explanations of model architectures, APIs, fine-tuning techniques, prompt engineering, and deployment strategies. Developed for learners for easy navigation to help users leverage LLMs effectively.",
+      techstack:["Next.js", "Node.js"],
+      link: "https://github.com/ZoyaMomin30/llm-doc",
+      image:"/llm.png"
+    },
   ]
-
   return (
     <section className="relative py-20 bg-black text-white">
       <div ref={ref} className="container mx-auto px-4">
@@ -66,8 +81,6 @@ export default function Portfolio() {
         </div>
 
       </motion.div>
-
-
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
           {projects.map((project, index) => (
             <motion.div

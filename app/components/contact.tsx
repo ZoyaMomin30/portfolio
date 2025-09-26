@@ -26,7 +26,6 @@ const formSchema = z.object({
 
 export default function Contact() {
 
-
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -122,6 +121,7 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
 
 
 
+
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -145,6 +145,7 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
                   </FormItem>
                 )}
               />
+
               <FormField
                 control={form.control}
                 name="email"
@@ -158,6 +159,7 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
                   </FormItem>
                 )}
               />
+
               <FormField
                 control={form.control}
                 name="message"
@@ -200,6 +202,7 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
           </Form>
         </motion.div>
       </div>
+
       <div className="absolute inset-0 z-0 opacity-30">
         <svg className="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
           {Array.from({ length: 50 }).map((_, i) => (
@@ -207,6 +210,7 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
           ))}
         </svg>
       </div>
+      
     </section>
   )
 }

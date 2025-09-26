@@ -49,7 +49,7 @@ export default function About() {
                                     transition={{ duration: 0.8 }}
                                     style={{ margin: "30px 0", display:"flex", alignSelf:"center", alignItems:"center" }}
                                 >
-                                <a id="resume-button" href="/zoyaResume57.pdf" download>
+                                <a id="resume-button" href="/Zoya_BE_copy.pdf" download>
                                 <button className="button"  style={{display:"flex", alignSelf:"center", alignItems:"center"}}>
                                     <span>Resume</span>
                                 </button>
