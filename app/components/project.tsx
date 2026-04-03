@@ -12,6 +12,22 @@ export default function Portfolio() {
   const projects = [
     {
       id: 1,
+      title: "AI driven HR Portal",
+      description: "Developed a scalable hiring platform featuring secure authentication, resume ingestion, automated ATS scoring and job candidate matching. Led recruiters to manage jobs and applicants via real-time dashboards and intelligent candidate ranking.",
+      techstack:["React", "Python", "PostgreSQL"],
+      link: "https://qr-report-gen.vercel.app/",
+      image:"/jobportal.png"
+    },
+    {
+      id: 2,
+      title: "Product Passport",
+      description: "Developed a full-stack Digital Product Passport platform enabling QR-based access to transparent sustainability data. Built with React, Python, and PostgreSQL, it empowers consumers to make informed choices by providing detailed product information and sustainability insights through a user-friendly interface.",
+      techstack:["React", "Python", "PostgreSQL"],
+      link: "https://qr-report-gen.vercel.app/",
+      image:"/productpassport.png"
+    },
+    {
+      id: 3,
       title: "Habit Tracker",
       description: "A visually appealing habit tracker designed to boost productivity and consistency. It features a user-friendly interface and uses APIs to track your daily habits efficiently. To keep you motivated, it also fetches and displays a new inspirational quote each day.",
       techstack:["Flask", "HTML", "CSS", "SQLAlchemy"],
@@ -19,7 +35,7 @@ export default function Portfolio() {
       image:"/habit-main.png"
     },
     {
-      id: 2,
+      id: 4,
       title: "Smart Contract System",
       description: "An application for decentralised document storage providing a quick access to all the documents so none of them are lost.Provides a hassle free storage and contains history of all the documents. users permissions based on their assigned roles within a system or organisation",
       techstack:["React Native", "Expo", "Firebase"],
@@ -27,7 +43,7 @@ export default function Portfolio() {
       image:"/document-main.png"
     },
     {
-      id: 3,
+      id: 5,
       title: "Iqra Laser Dies",
       description: "A business website for IQRA LASER DIES a Die Maker and Laser Die Cutting and Auto Bending Machine company. Created a modern, responsive website for a laser cutting manufacturer, enhancing online presence and showcasing products and services effectively.",
       techstack:["Next.js", "Node.js"],
@@ -35,7 +51,7 @@ export default function Portfolio() {
       image:"/ild-main.png"
     },
     {
-      id: 4,
+      id: 6,
       title: "Code Snippet Storage",
       description: "web application designed for developers to easily store, organize, and share code snippets. Built with a clean, intuitive UI and optimized for efficiency, this project enhances productivity by keeping code accessible and well-organized ",
       techstack:["Next.js", "Node.js"],
@@ -43,7 +59,7 @@ export default function Portfolio() {
       image:"/code-cache.png"
     },
     {
-      id: 5,
+      id: 7,
       title: "Data Science Documentation",
       description: "A platform for sharing detailed data science project walkthroughs and analytical insights. Users can explore topics like Python, machine learning and  data visualization. The blog emphasizes clarity and reproducibility, helping learners and practitioners document, understand, and apply data science concepts effectively. ",
       techstack:["Next.js", "Node.js"],
@@ -51,7 +67,7 @@ export default function Portfolio() {
       image:"/datascience.png"
     },
     {
-      id: 6,
+      id: 8,
       title: "LLM Engineer Documentation",
       description: "Made with the intention of To Developers By Developers. A resource for understanding and using large language models. It provides clear explanations of model architectures, APIs, fine-tuning techniques, prompt engineering, and deployment strategies. Developed for learners for easy navigation to help users leverage LLMs effectively.",
       techstack:["Next.js", "Node.js"],

@@ -24,21 +24,34 @@ export default function Gallery() {
       alt: "Bod",
       title: "Board of Director EDC",
     },
-    {
-      src: "/debate.jpg",
-      alt: "award",
-      title: "Debate Competition Winner",
+        {
+      src: "/infosys.jpg",
+      alt: "Award",
+      title: "InfosysxACM Hackathon Finalist",
     },
+
     {
       src: "/softball.jpg",
       alt: "Award",
       title: "State Level Softball",
     },
+        {
+      src: "/debate.jpg",
+      alt: "award",
+      title: "Debate Competition Winner",
+    },
+
     {
+      src: "/bod_recog.jpg",
+      alt: "Award",
+      title: "Board of Director Recognition",
+    },
+        {
       src: "/wdc.jpg",
       alt: "Art piece 4",
       title: "CDC Student Representative",
     },
+
   ]
 
   return (
