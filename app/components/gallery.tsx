@@ -64,7 +64,6 @@ export default function Gallery() {
         viewport={{ once: true }}
         className="text-center mb-12"
       >
-
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Extra <span className="text-[#a78bfa]"> Curricular</span>
@@ -103,5 +102,3 @@ export default function Gallery() {
     </section>
   )
 }
-
-
